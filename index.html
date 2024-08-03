@@ -1,17 +1,25 @@
 <html>
     <head>
         <title>Tejas Raman</title>
-        <script src="particles.js"></script>
+        <script src="libs/particles.js"></script>
+        <script src="scripts.js"></script>
         <link rel="stylesheet" href="styles.css">
     </head>
     <body>
         <div id="titlepage" class="flexparent">
             <div id="infocard" style="flex: 1">
+                <div id="text_margin">
                 <h1 id="hi_tejas">Hi, I'm <br> Tejas!</h1>
-                <p>9th Grade @ Niwot High School</p>
+                    <br><br>
+                <p>9th Grade Student, Niwot High School</p>
+                    <br><br><br>
+                    <a href="https://github.com/tejasraman" target="_blank"><img src="assets/gh.svg" class="social" onmouseover="hovergh(this);" onmouseout="unhovergh(this);"></a>
+                    <div class="social_spacer"></div>
+                    <a href="mailto:tejasraman@icloud.com" target="_blank"><img src="assets/email.svg" class="social" onmouseover="hoverml(this);" onmouseout="unhoverml(this);"></a>
+                </div>
             </div>
             <div id="particles-js" style="flex: 2"></div>
         </div>
-        <script src="app.js"></script>
+        <script src="libs/app.js"></script>
     </body>
 </html>
