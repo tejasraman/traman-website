@@ -1,6 +1,6 @@
 /* CSS font imports */
-@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('assets/fonts/stylesheet.css');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 #titlepage {
     background: linear-gradient(45deg, rgb(0, 3, 37) 0%, rgb(0, 24, 24) 50%, rgba(23, 0, 48, 1) 100%);
@@ -13,13 +13,10 @@
     width: 100%;
 }
 
-#titlepage1 {
-    background-color: white;
-    background-size: 400% 400%;
+.card {
+    background-color: black;
     height: 100vh;
-    /*overflow: inherit;*/
-    /*z-index: -2 !important;*/
-    animation: kf1 10s ease-in-out infinite alternate;
+    position: relative;
 }
 
 @keyframes kf1 {
@@ -42,8 +39,17 @@
 }
 
 .flexparent {
-    display: flex;
     flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.row {
+    flex-direction: row;
+}
+
+.col {
+    flex-direction: column;
 }
 
 #infocard {
@@ -59,13 +65,13 @@
 }
 
 #hi_tejas {
-    font-family: 'Glegoo', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 4vw;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 p {
-    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'glacial_indifferenceregular', sans-serif;
     font-size: 2vw;
 }
 
@@ -107,4 +113,20 @@ a {
     height: 100%;
     width: 100%;
     overflow: hidden;
+}
+
+.header {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 4vw;
+    color: white;
+    display: block;
+}
+.tile{
+    background-color: blue;
+    height: 7vw;
+    border-radius: 10%;
+    flex: 1;
+    width: 10vw;
+    margin: 1vw;
 }
