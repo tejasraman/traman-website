@@ -31,9 +31,10 @@ function Scroller() {
         document.getElementById("infocard").style.transform = `translate(${-(Math.round(x*200))}%)`;
         document.getElementById("particles-js").style.transform = `translate(${(Math.round(x*200))}%)`;
 
-    } else{
+    } else {
         document.getElementById("infocard").style.transform = `translate(${-(Math.round(0.5*200))}%)`;
         document.getElementById("particles-js").style.transform = `translate(${(Math.round(0.5*200))}%)`;
     }
+
 }
 
